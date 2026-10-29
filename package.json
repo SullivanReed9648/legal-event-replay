@@ -1,0 +1,20 @@
+{
+  "name": "legal-event-replay",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/replay_service.ts",
+    "replay:sample": "tsx scripts/replay_sample.ts",
+    "test": "tsx --test test/replay_plan.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

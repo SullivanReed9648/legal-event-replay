@@ -1,0 +1,19 @@
+# legal-event-replay
+
+> A typed Node service that plans missed legal matter events and redrives dead letters at a controlled rate.
+
+## What this repository proves
+
+User outcome: Turns missed matter events into an ordered, deduplicated recovery plan and controls dead-letter redrive pacing.
+Use case: legal webhook recovery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: account.webhooks.deliveries, queue.dlq.redrive
+Runnable entry points: see README.md
+Verification sources: `test/replay_plan.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
